@@ -1,4 +1,4 @@
-package com.ecomarket.ecomarket.Model;
+package com.ecomarket.ecomarket.model;
 
 import java.sql.Date;
 
