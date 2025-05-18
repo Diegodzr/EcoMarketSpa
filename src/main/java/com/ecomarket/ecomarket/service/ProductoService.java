@@ -13,7 +13,7 @@ import com.ecomarket.ecomarket.repository.ProductoRepository;
 @Service
 public class ProductoService {
     @Autowired
-    private ProductoRepository productoRepository;
+    private Producto productoRepository;
 
     public List<Producto> findAll() {
         return productoRepository.findAll();
