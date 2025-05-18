@@ -13,13 +13,13 @@ import com.ecomarket.ecomarket.repository.ProductoRepository;
 @Service
 public class ProductoService {
     @Autowired
-    private Producto productoRepository;
+    private ProductoRepository productoRepository;
 
     public List<Producto> findAll() {
         return productoRepository.findAll();
     }
 
-    public Optional<Producto> findById(Long id) {
+    public Optional<Producto> findById(Integer id) {
         return productoRepository.findById(id);
     }
 
@@ -27,7 +27,7 @@ public class ProductoService {
         return productoRepository.save(producto);
     }
 
-    public void deleteById(Long id) {
+    public void deleteById(Integer id) {
         productoRepository.deleteById(id);
     }
     public Producto update(Integer id, Producto productoActualizado) {
